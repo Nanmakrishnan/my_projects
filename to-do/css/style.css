@@ -1,0 +1,111 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:'Roboto Slab',sans-serif;
+    flex-direction: column;
+}
+
+main{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #d77efa;
+}
+.box1 {
+    background-color: white;
+    border-radius: 40px;
+    width: 400px;
+    display: flex;
+    flex-direction: column; /* Center the contents vertically */
+    align-items: center; /* Center the contents horizontally */
+    padding: 20px; /* Increase padding for better spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style the heading */
+  .box1 h2 {
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 15px; /* Add spacing below the heading */
+    background: linear-gradient(45deg, #eab2f9, #d77efa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    position: relative;
+  }
+.box{
+    width:90%;
+    max-width:600px;
+    min-height:500px;
+    background-color:white;
+    border-radius: 10px;
+    padding:15px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#item{
+    padding:10px;
+    font-size:20px;
+    width:100%;
+    border:0;
+    outline:0;
+    display:block;
+    /* font-weight:bold; */
+    box-shadow:0px 0px 2px grey;
+}
+#to-do-box{
+    margin-top:10px;
+    list-style:none;
+}
+#to-do-box li{
+    position:relative;
+    background-color: #ffbe76;
+    color:white;
+    padding:10px;
+    font-weight:bold;
+    border-radius: 2px;
+    padding-right: 30px;
+    text-align: justify;
+    margin-top: 10px;
+    user-select: none;
+
+}
+#to-do-box li i{
+    position: absolute;
+    right:10px;
+    top:10px;
+    
+}
+.done{
+    text-decoration: line-through;
+    color: black !important;
+    background-color: #badc58 !important;
+
+
+}
+#textToSpeech {
+    position: absolute;
+    left: -9999px;
+}
+
+
+
+@media (max-width: 768px) {
+    .box1 {
+      width: 90%; /* Adjust as needed for your responsive size on smaller screens */
+      max-width: 400px; /* Maximum width for smaller screens */
+    }
+  
+    .box {
+      width: 90%; /* Adjust as needed for your responsive size on smaller screens */
+      max-width: 500px; /* Maximum width for smaller screens */
+    }
+  }
